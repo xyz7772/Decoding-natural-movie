@@ -1,0 +1,2 @@
+mySVMdecoder is a binary SVM classifier (a function code)
+multiSVM is the multi-class SVM classifier (a function code)

@@ -1,0 +1,15 @@
+﻿1.actual_fr: This is a 1x31 cell array. Each element in this array corresponds to the actual firing rate (select_response) of a unit from a particular file in your dataset. You can access these values using the {} operator. For example, actual_fr{1} will give you the actual firing rate of the unit from the first file.
+
+2.predicted_fr: This is also a 1x31 cell array. Each element in this array corresponds to the predicted firing rate (p_firing_rate) of a unit from a particular file, as predicted by the GLM. Similar to actual_fr, you can access these values using the {} operator. For example, predicted_fr{1} will give you the predicted firing rate of the unit from the first file.
+
+3.model_coefficients: This is a 4x1913 double array. Each column of this array contains the coefficients of the GLM for a particular unit. The first row is the intercept, the second row contains the coefficients for the stimulus variable, the third row contains the coefficients for the speed variable, and the fourth row contains the coefficients for the interaction term. You can access these values using the () operator. For example, model_coefficients(2, 1) will give you the coefficient of the stimulus variable for the first unit.
+
+4.yidx: This is a 1x1913 double array. Each element in this array is the index of the maximum coefficient in the GLM for a particular unit. This index tells us which stimulus (frame) has the most influence on the firing rate of the unit, according to the GLM. You can access these values using the () operator. For example, yidx(1) will give you the index of the maximum coefficient for the first unit.
+
+5.meansqerror: This is a 1x31 cell array. Each element in this array corresponds to the Mean Squared Error (MSE) between the actual and predicted firing rates of a particular file, as computed by the GLM. The MSE is a measure of the prediction error of the model - a smaller MSE indicates a better fit of the model to the data.
+
+6.all_pph: This is a 1x31 cell array. Each element in this array corresponds to the pph value of a particular file. All repetitions in each session are expanded in chronological order (movie image order) and consolidated into a one-dimensional array.
+
+7.all_ppw: This is a 1x31 cell array. Each element in this array corresponds to the pph value of a particular file. All repetitions in each session are expanded in chronological order (movie image order) and consolidated into a one-dimensional array.
+
+8.all_spd: This is a 1x31 cell array. Each element in this array corresponds to the speed value of a particular file. All repetitions in each session are expanded in chronological order (movie image order) and consolidated into a one-dimensional array.
