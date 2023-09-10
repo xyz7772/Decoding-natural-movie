@@ -1,0 +1,5 @@
+act_coefficient_All_units_Hbv.mat: This file contains the activity coefficients obtained using a multiclass approach. The 'Hbv' in the filename stands for 'High Behavioral Variability', indicating that this data represents the activity coefficients when there's a high degree of behavioral variation.
+
+act_coefficient_All_units_Lbv.mat: Similar to the 'Hbv' file, this one also contains activity coefficients derived from a multiclass SVM decoder. The 'Lbv' signifies 'Low Behavioral Variability'. 
+
+selected_frames.mat: This file provides image data related to specific frames of the natural movie. It essentially captures the image information for 30 frames in the natural movie one.
