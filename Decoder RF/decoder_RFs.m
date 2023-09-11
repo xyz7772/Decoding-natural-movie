@@ -1,15 +1,6 @@
-
-% file_names = {'all_units_from1session',
-% 'V1_random',
-% %'V1_hv',
-% 'CA1'
-% };
-
 file_names = {'All_units_Lbv'
     'All_units_Hbv',
 };
-
-% titles = file_names;
 
 titles = {'Image CC (Natural movie)',
     'All units (Low behav. var.)',
@@ -32,7 +23,6 @@ cc_all = [];
 figure('Position',[100,100,1400,700])
 
 subplot(2,length(file_names)+1,1); 
-%title('CC (Image RFs)', 'FontWeight','normal'); hold on
 title(titles{1}, 'FontWeight','normal'); hold on
 
 imagesc(cc_SF, [0,1])
@@ -61,8 +51,6 @@ for ijk = 1:length(file_names)
 
 subplot(2,length(file_names)+1,ijk+1); 
 title(titles{ijk+1}, 'FontWeight','normal', 'Interpreter','none'); 
-%title(file_name, 'FontWeight','normal', 'Interpreter','none'); 
-%title(['CC (Decod. RFs)'], 'FontWeight','normal'); 
 hold on
 imagesc(cc_RF, [0,1])
 colorbar()
@@ -80,8 +68,6 @@ set(gca, 'LineWidth', 1, 'FontSize', 17, 'TickDir', 'out', 'TickLength',[.01,.01
 
 subplot(2,length(file_names)+1,length(file_names)+1+ijk+1)
 hold on
-%plot(abs(diag(cc)), '-o')
-%bar(cc_all{ijk}, 'FaceColor','k')
 
 imagesc(cc, [0,1])
 colorbar()
@@ -94,7 +80,6 @@ if ijk == 1
 ylabel('Image Frame')
 end
 
-%ylim([0,1])
 
 set(gca, 'LineWidth', 1, 'FontSize', 17, 'TickDir', 'out', 'TickLength',[.01,.01])
 
