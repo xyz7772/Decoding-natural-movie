@@ -2,7 +2,6 @@ clear all;
 close all;
 clc;
 
-% Define path and add it
 path_name = 'D:\2022\下半年\all files\';
 addpath(path_name);
 
@@ -20,7 +19,6 @@ Region_name = [];
 Accuracy = [];
 N_frames = 30;
 
-% Process each unique unit
 for unit_i = 1:length(unit_all)
     unit = unit_all(unit_i);
     Data = struct;
@@ -53,7 +51,6 @@ activity_table.Average = nanmean(activity_table.Accuracy, 2);
 activity_table.Std = nanstd(activity_table.Accuracy, 0, 2);
 activity_table = sortrows(activity_table, 'Average', 'descend');
 
-% Plot data
 figure;
 bar(table2array(activity_table(:,"Accuracy"))', table2array(activity_table(:,"Region_name")));
 ylim([0 100]);
