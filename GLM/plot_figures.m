@@ -1,5 +1,5 @@
-
 load('./GLM_output_MAXnormal.mat');
+% load('./GLM_output.mat');
 
 N = length(actual_fr);
 
@@ -18,8 +18,6 @@ bhd_all = [];
 bhmd = []; 
 bhm = [];
 ccmd = [];
-
-ccL = []; ccH = [];
 for ijk = 1:N 
 
     x = actual_fr{ijk};
@@ -49,20 +47,9 @@ for ijk = 1:N
     bhm = [bhm, nanmean(beh_par{ijk})];
 
     ccmd = [ccmd, nanmean(diag(cc0))];
-
-    %
-
-    % ccL = [ccL, diag(corr(x(beh_z<1,:)', y(beh_z<1,:)'))'];
-    % ccH = [ccH, diag(corr(x(beh_z>1,:)', y(beh_z>1,:)'))'];
-
 end
 
 %%
-
-% figure()
-% hold on
-% histogram(ccL)
-% histogram(ccH)
 
 plot_my_figs = 1;
 
@@ -96,7 +83,7 @@ histogram(mse, 'DisplayStyle','stairs', 'EdgeColor','k', 'LineWidth',2)
 xlabel('MSE')
 ylabel('# Units')
 
-%xlim([0,.1])
+xlim([0,.1])
 
 set(gca, 'LineWidth', 1, 'FontSize', 17, 'TickDir', 'out', 'TickLength',[.01,.01])
 
