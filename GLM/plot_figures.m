@@ -1,7 +1,5 @@
 
 load('./GLM_output_MAXnormal.mat');
-% load('./GLM_output.mat');
-%load('./GLM_output_withoutNomalisation.mat');
 
 N = length(actual_fr);
 
