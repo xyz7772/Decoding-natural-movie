@@ -1,4 +1,5 @@
 behaviour_with states diff: this is the code to obtain decoding accuracy in different behavior states.
 behaviour_random(control): this is the code to obtain decoding accuracy in the randomly selected training and test repeats, used as control group.
+scatter_behaviour: this helps generate four scatter plots for H-H,L-L,H-L,L-H.
 
 **please run 'behaviour_with states diff.m' first! Then, run 'behaviour_random(control).m'
