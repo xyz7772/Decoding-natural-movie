@@ -5,7 +5,7 @@ Decoding visual stimuli (nature movie frames) from neural activity across differ
 ## Usage
 Unzip and open with Matlab and Jupyter notebook (Matlab kernal).
 
-##Datasets
+## Datasets
 In this study, we analysed publicly available datasets provided by the Allen Brain Institute. You can find the data at this link: https://portal.brain-map.org/explore/circuits/visual-coding-neuropixels
 
 
