@@ -2,6 +2,6 @@ behaviour_with states diff: this is the code to obtain decoding accuracy in diff
 behaviour_random(control): this is the code to obtain decoding accuracy in the randomly selected training and test repeats, used as control group.
 scatter_behaviour: this helps generate four scatter plots for H-H,L-L,H-L,L-H from all units.
 scatter_VISp: this helps generate four scatter plots for H-H,L-L,H-L,L-H from VISp(V1) only.
-getColorKey: this is a built-in function that get the colors for different brain regions.
+getColorKey: this is a built-in function that get the colors for different brain regions. For plotting only.
 
 **please run 'behaviour_with states diff.m' first, then run 'behaviour_random(control).m'
