@@ -10,8 +10,8 @@ Decoding visual stimuli (natural movie frames) from neural activity across diffe
    - In this folder, you'll find code that explores how different behavioral states impact decoding outcomes.
 3. **Decoder RF (Receptive Fields)**:
    - In this folder, you'll find code that deals with image reconstruction.
-4. **GLM (Generalized Linear Models)**:
-   - Here, we utilize Generalized Linear Models (GLM) to predict neural firing rates.
+4. **GLM**:
+   - Here, you'll find code that utilises Generalized Linear Models (GLM) to predict neural firing rates.
 
 ## Usage
 Unzip and open with Matlab and Jupyter notebook (Matlab kernal).
