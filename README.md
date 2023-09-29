@@ -5,13 +5,13 @@ Decoding visual stimuli (natural movie frames) from neural activity across diffe
 📌 Repository Overview:
 
 1. **SVM Decoders**:
-   - This folder contains all code related to Support Vector Machine (SVM) decoders and decoding accuracy results.
+   - Contains all code related to Support Vector Machine (SVM) decoders and decoding accuracy results.
 2. **Behavioral States**:
-   - In this folder, you'll find code that explores how different behavioral states impact decoding outcomes.
+   - Explores how different behavioral states impact decoding outcomes.
 3. **Decoder RF (Receptive Fields)**:
-   - In this folder, you'll find code that deals with image reconstruction.
+   - Deals with image reconstruction.
 4. **GLM**:
-   - Here, you'll find code that utilises Generalized Linear Models (GLM) to predict neural firing rates.
+   - Utilises Generalized Linear Models (GLM) to predict neural firing rates.
 
 ## Usage
 Unzip and open with Matlab and Jupyter notebook (Matlab kernal).
